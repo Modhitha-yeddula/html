@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sponsor Registration</title>
+</head>
+<body>
+
+<h2>Sponsor Registration</h2>
+
+<form>
+  <div class="container">
+    <!-- Left Column -->
+    <div class="column">
+      <label for="prefix">Prefix</label>
+      <input type="text" id="prefix" name="prefix">
+
+      <label for="first-name">Name</label>
+      <div style="display: flex; gap: 10px;">
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" style="flex: 1;">
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" style="flex: 1;">
+      </div>
+
+      <label for="pronouns">Preferred Pronouns</label>
+      <input type="text" id="pronouns" name="pronouns">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="sample@example.com">
+
+      <label for="work-phone">Work Phone</label>
+      <input type="tel" id="work-phone" name="work-phone">
+
+      <label for="cell-phone">Cell Phone</label>
+      <input type="tel" id="cell-phone" name="cell-phone">
+
+      <label for="job-title">Job Title</label>
+      <input type="text" id="job-title" name="job-title">
+
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company">
+
+      <label for="address">Full Business Address</label>
+      <input type="text" id="address" name="address">
+
+      <label for="website">Company Website</label>
+      <input type="url" id="website" name="website">
+    </div>
+
+    <!-- Right Column -->
+    <div class="column">
+      <label for="description">Company Description</label>
+      <textarea id="description" name="description" rows="4"></textarea>
+
+      <label for="facebook">Company Facebook Page</label>
+      <input type="url" id="facebook" name="facebook">
+
+      <label for="twitter">Company Twitter Handle</label>
+      <input type="text" id="twitter" name="twitter">
+
+      <label for="linkedin">Company LinkedIn Handle</label>
+      <input type="text" id="linkedin" name="linkedin">
+
+      <div class="sponsorship-level">
+  <label>Sponsorship Level</label>
+  <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px;">
+    <label style="display: flex; align-items: center;">
+      <input type="radio" name="sponsorship" value="gold" style="margin-right: 8px;"> Gold
+    </label>
+    <label style="display: flex; align-items: center;">
+      <input type="radio" name="sponsorship" value="diamond" style="margin-right: 8px;"> Diamond
+    </label>
+    <label style="display: flex; align-items: center;">
+      <input type="radio" name="sponsorship" value="platinum" style="margin-right: 8px;"> Platinum
+    </label>
+  </div>
+</div>
+
+      <label for="guests">Additional Guests (name, email)</label>
+      <textarea id="guests" name="guests" rows="3"></textarea>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
